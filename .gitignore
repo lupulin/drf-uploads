@@ -1,0 +1,3 @@
+*.sql*
+
+drfuploads/media/*
