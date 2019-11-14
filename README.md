@@ -9,3 +9,22 @@
 7. `python manage.py runserver`
 
 For more information how it works, go to http://chrisbartos.com
+
+
+### Uploading examples
+
+Ensure your server is set up and running on localhost.
+
+#### Python
+
+    python upload_file.py
+
+#### Node.js
+
+Tested on Node 10.
+
+    node upload_file.js
+
+#### Curl
+
+    sh upload_file.sh

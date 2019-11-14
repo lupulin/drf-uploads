@@ -4,11 +4,13 @@ from rest_framework.response import Response
 from rest_framework import status
 from .serializers import MyFileSerializer
 
+
 class MyFileView(APIView):
     # MultiPartParser AND FormParser
     # https://www.django-rest-framework.org/api-guide/parsers/#multipartparser
     # "You will typically want to use both FormParser and MultiPartParser together in order to fully support HTML form data."
     parser_classes = (MultiPartParser, FormParser)
+
     def post(self, request, *args, **kwargs):
         file_serializer = MyFileSerializer(data=request.data)
         if file_serializer.is_valid():
